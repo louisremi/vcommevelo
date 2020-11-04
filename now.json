@@ -1,5 +1,5 @@
 {
-  "name": "react-next-landing",
+  "name": "vcommevelo",
   "version": 2,
   "builds": [
     { "src": "packages/landing/package.json", "use": "@now/static-build" }

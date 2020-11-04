@@ -423,14 +423,14 @@ export const footerData = {
   ],
   menuWidgets: [
     {
-      title: 'La Boutique',
+      title: 'Boutique',
       menu: [
         {
-          text: 'Les vélos vintages',
+          text: 'Vélos vintages',
           link: '/boutique-de-velo-a-lyon/velo-vintage',
         },
         {
-          text: 'Les vélos de route récents',
+          text: 'Vélos de route récents',
           link: '/boutique-de-velo-a-lyon/velo-recent',
         },
         {
@@ -483,29 +483,3 @@ export const footerData = {
     },
   ],
 };
-
-/* ------------------------------------ */
-// social profile
-/* ------------------------------------ */
-export const socialProfile = [
-  {
-    icon: 'flaticon-facebook-logo',
-    link: '#',
-  },
-  {
-    icon: 'flaticon-twitter-logo-silhouette',
-    link: '#',
-  },
-  {
-    icon: 'flaticon-instagram',
-    link: '#',
-  },
-  {
-    icon: 'flaticon-tumblr-logo',
-    link: '#',
-  },
-  {
-    icon: 'flaticon-dribble-logo',
-    link: '#',
-  },
-];

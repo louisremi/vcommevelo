@@ -29,8 +29,6 @@ firebase-debug.log
 #submodule
 packages/reusecore
 .cache/
-now.json
-firebase.json
 .now
 public/
 #docz ignore

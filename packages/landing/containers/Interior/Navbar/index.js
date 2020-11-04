@@ -16,7 +16,7 @@ import LoginModal from '../LoginModal';
 import Copyright from '../Copyright';
 
 import { menuData } from 'common/src/data/Interior';
-import logo from 'common/src/assets/image/vcommevelo/logo.svg';
+import logo from 'common/src/assets/image/interior/logo.svg';
 
 const CloseModalButton = () => (
   <Button

@@ -1,25 +1,24 @@
 import React from 'react';
-import Link from 'next/link';
+
 import Text from 'common/src/components/Text';
 import CopyrightWrapper from './copyright.style';
+import { SocialList } from '../Footer/footer.style';
 
-import { socialProfile } from 'common/src/data/Velo';
+import { footerData } from 'common/src/data/Velo';
 
 const Copyright = () => {
+  const { socialLinks } = footerData;
+
   return (
     <CopyrightWrapper className="copyright_section">
-      <ul>
-        {socialProfile.map((profile, index) => (
-          <li key={`profile_key_${index}`}>
-            <Link href="#1">
-              <a>
-                <i className={profile.icon} />
-              </a>
-            </Link>
-          </li>
-        ))}
-      </ul>
-      <Text content="Copyrights 2019 @RedQ Inc" />
+      <SocialList>
+          {socialLinks.map((item, id) => (
+            <li className={item.name} key={`link-key${id}`}>
+              <a href={item.link} aria-label={item.name}>{item.icon}</a>
+            </li>
+          ))}
+        </SocialList>
+      <Text content={`Copyright ${new Date().getFullYear()} @VcommeVelo`} />
     </CopyrightWrapper>
   );
 };
