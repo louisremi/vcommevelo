@@ -7,7 +7,7 @@ import Image from 'common/src/components/Image';
 import Container from 'common/src/components/UI/Container';
 import GlideCarousel from 'common/src/components/GlideCarousel';
 import GlideSlide from 'common/src/components/GlideCarousel/glideSlide';
-import { SectionHeader, CircleLoader } from '../interior.style';
+import { SectionHeader, CircleLoader } from '../velo.style';
 import SectionWrapper, {
   TeamCard,
   ImageWrapper,
@@ -15,7 +15,7 @@ import SectionWrapper, {
   CarouselWrapper,
 } from './team.style';
 
-import { teamData } from 'common/src/data/Interior';
+import { teamData } from 'common/src/data/Velo';
 
 const Team = () => {
   const { title, slogan, members } = teamData;
@@ -63,8 +63,8 @@ const Team = () => {
                 prevButton={<span className="prev_arrow" />}
               >
                 <Fragment>
-                  {members.map(member => (
-                    <GlideSlide key={`project_key${member.id}`}>
+                  {members.map((member, memberId) => (
+                    <GlideSlide key={`project_key${memberId}`}>
                       <TeamCard className="team_card">
                         <ImageWrapper className="image_wrapper">
                           <Image src={member.avatar} alt={member.name} />
@@ -75,8 +75,8 @@ const Team = () => {
                             <Text content={member.designation} />
                           </div>
                           <ul className="social_links">
-                            {member.social_links.map(item => (
-                              <li key={`social_link__key${item.id}`}>
+                            {member.social_links.map((item, id) => (
+                              <li key={`social_link__key${id}`}>
                                 <Link href={item.url}>
                                   <a aria-label="Check out our team member profile">
                                     {item.icon}

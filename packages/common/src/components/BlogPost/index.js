@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import PropTypes from 'prop-types';
 
 const BlogPost = ({ className, thumbUrl, title, excerpt, link }) => {
@@ -18,7 +19,14 @@ const BlogPost = ({ className, thumbUrl, title, excerpt, link }) => {
       <div className="content">
         <h3 className="title">{title}</h3>
         <p className="excerpt">{excerpt}</p>
-        {link && <div className="learn_more">{link}</div>}
+        {link && (
+          <Link href={link}>
+            <a className="learn__more-btn">
+                <span className="btn_text">+ de détails</span>
+                <span className="next_arrow"></span>
+              </a>
+          </Link>
+        )}
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ import { veloTheme } from 'common/src/theme/velo';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
 import Navbar from '../containers/Velo/Navbar';
 import Banner from '../containers/Velo/Banner';
-import Feature from '../containers/Velo/Feature';
+import Service from '../containers/Velo/Service';
 import AboutUs from '../containers/Velo/AboutUs';
 import Project from '../containers/Velo/Project';
 import Team from '../containers/Velo/Team';
@@ -26,9 +26,9 @@ export default () => {
     <ThemeProvider theme={veloTheme}>
       <Fragment>
         <Head>
-          <title>V comme Vélo | Achat, Vente et entretien vélo, à domicile ou à notre atelier Lyon Part-Dieu</title>
+          <title>V comme Vélo | Vente, Reprise et entretien vélo, à domicile ou à notre atelier Lyon Part-Dieu</title>
           <meta name="theme-color" content="#00A8C6" />
-          <meta name="description" content="V comme vélo propose de bons vélos d'occasion, vintage ou récent, entièrement révisés par nos soins. Nous pouvons aussi nous déplacer chez vous pour entretenir ou racheter votre vélo." />
+          <meta name="description" content="V comme vélo propose de bons vélos d'occasion, vintage ou récent, entièrement révisés par nos soins. Nous pouvons aussi nous déplacer chez vous pour entretenir ou reprendre votre vélo." />
           <meta
             name="keywords"
             content="Vélo, bicyclette, réparation, atelier, vélociste"
@@ -54,13 +54,15 @@ export default () => {
           </Sticky>
           <ContentWrapper>
             <Banner />
-            <Feature />
+            <Service />
             <AboutUs />
+            {/*
             <Project />
             <Team />
             <News />
             <Testimonial />
             <Gallery />
+            */}
           </ContentWrapper>
           <Footer />
         </VeloWrapper>

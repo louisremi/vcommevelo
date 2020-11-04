@@ -15,8 +15,8 @@ import SearchPanel from '../SearchPanel';
 import LoginModal from '../LoginModal';
 import Copyright from '../Copyright';
 
-import { menuData } from 'common/src/data/Interior';
-import logo from 'common/src/assets/image/interior/logo.png';
+import { menuData } from 'common/src/data/Velo';
+import logo from 'common/src/assets/image/velo/logo.png';
 
 const CloseModalButton = () => (
   <Button
@@ -149,7 +149,7 @@ Navbar.defaultProps = {
     minHeight: '70px',
   },
   logoStyle: {
-    width: '128px',
+    width: '200px',
     height: 'auto',
   },
 };

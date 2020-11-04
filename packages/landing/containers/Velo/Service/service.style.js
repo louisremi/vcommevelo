@@ -18,7 +18,7 @@ const SectionWrapper = styled.section`
   }
 `;
 
-export const FeatureWrapper = styled.div`
+export const ServiceWrapper = styled.div`
   display: flex;
   margin: 0 -71.5px;
   @media only screen and (max-width: 1360px) {
@@ -30,7 +30,6 @@ export const FeatureWrapper = styled.div`
 
   .blog_post {
     padding: 0 71.5px;
-    text-align: center;
     @media only screen and (max-width: 1360px) {
       padding: 0 25px;
     }
@@ -66,6 +65,7 @@ export const FeatureWrapper = styled.div`
         padding-left: 20px;
       }
       h3 {
+        text-align: center;
         margin: 0 0 16px;
         @media only screen and (max-width: 1360px) {
           font-size: 20px;
@@ -77,7 +77,6 @@ export const FeatureWrapper = styled.div`
         }
       }
       p {
-        margin: 0;
       }
     }
   }

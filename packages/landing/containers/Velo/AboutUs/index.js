@@ -10,20 +10,20 @@ import SectionWrapper, {
   TextWrapper,
 } from './aboutUs.style';
 
-import { aboutData } from 'common/src/data/Interior';
+import { aboutData } from 'common/src/data/Velo';
 
 const AboutUs = () => {
-  const { thumb_url, title, text, text2 } = aboutData;
+  const { thumb_url, thumb_alt, title, text, text2, link, link_lbl } = aboutData;
   const setTitle = title => {
     return { __html: title };
   };
 
   return (
-    <SectionWrapper id="aboutUs">
+    <SectionWrapper id="apropos">
       <Container>
         <ImageWrapper>
           <Fade left>
-            <Image src={thumb_url} alt="Interior Landing by RedQ" />
+            <Image src={thumb_url} alt={thumb_alt} />
           </Fade>
         </ImageWrapper>
         <TextWrapper>
@@ -31,9 +31,9 @@ const AboutUs = () => {
             <Heading dangerouslySetInnerHTML={setTitle(title)} />
             <Text content={text} />
             <Text content={text2} />
-            <Link href="#1">
+            <Link href={link}>
               <a className="learn__more-btn">
-                <span className="btn_text">VISITE SITE</span>
+                <span className="btn_text">{link_lbl}</span>
                 <span className="next_arrow"></span>
               </a>
             </Link>

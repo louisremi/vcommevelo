@@ -3,16 +3,16 @@ import Fade from 'react-reveal/Fade';
 import Heading from 'common/src/components/Heading';
 import BlogPost from 'common/src/components/BlogPost';
 import Container from 'common/src/components/UI/Container';
-import { SectionHeader } from '../interior.style';
-import SectionWrapper, { FeatureWrapper } from './feature.style';
+import { SectionHeader } from '../velo.style';
+import SectionWrapper, { ServiceWrapper } from './service.style';
 
-import { featureData } from 'common/src/data/Interior/';
+import { serviceData } from 'common/src/data/Velo/';
 
 const Feature = () => {
-  const { title, slogan, features } = featureData;
+  const { title, slogan, services } = serviceData;
 
   return (
-    <SectionWrapper id="feature">
+    <SectionWrapper id="services">
       <Fade bottom>
         <SectionHeader>
           <Heading as="h5" content={title} />
@@ -21,16 +21,17 @@ const Feature = () => {
       </Fade>
       <Container width="1360px">
         <Fade bottom delay={30}>
-          <FeatureWrapper>
-            {features.map(item => (
+          <ServiceWrapper>
+            {services.map((item, id) => (
               <BlogPost
-                key={`feature_key${item.id}`}
+                key={`service_key${id}`}
                 thumbUrl={item.icon}
                 title={item.title}
                 excerpt={item.description}
+                link={item.link}
               />
             ))}
-          </FeatureWrapper>
+          </ServiceWrapper>
         </Fade>
       </Container>
     </SectionWrapper>

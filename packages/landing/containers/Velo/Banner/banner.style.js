@@ -78,11 +78,10 @@ export const ContentArea = styled.div`
     color: ${themeGet('colors.label', '#C6C6C6')};
   }
 
-  h1 {
+  h1,
+  p,
+  a {
     margin-bottom: 30px;
-    + p {
-      margin: 0;
-    }
   }
 `;
 
@@ -232,21 +231,21 @@ export const CarouselArea = styled.div`
       .item_wrapper {
         display: block;
         height: 100vh;
-        max-height: 540px;
+        max-height: 300px;
         border-radius: 20px;
         overflow: hidden;
         position: relative;
         @media only screen and (max-width: 1440px) {
-          max-height: 460px;
+          max-height: 280px;
         }
         @media only screen and (max-width: 1200px) {
-          max-height: 420px;
+          max-height: 260px;
         }
         @media only screen and (max-width: 991px) {
-          max-height: 400px;
+          max-height: 240px;
         }
         @media only screen and (max-width: 767px) {
-          max-height: 380px;
+          max-height: 220px;
         }
 
         &::after {

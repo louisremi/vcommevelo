@@ -6,14 +6,14 @@ import Image from 'common/src/components/Image';
 import Container from 'common/src/components/UI/Container';
 import GlideCarousel from 'common/src/components/GlideCarousel';
 import GlideSlide from 'common/src/components/GlideCarousel/glideSlide';
-import { SectionHeader } from '../interior.style';
+import { SectionHeader } from '../velo.style';
 import SectionWrapper, {
   ProjectWrapper,
   TextWrapper,
   ImageWrapper,
 } from './project.style';
 
-import { projectData } from 'common/src/data/Interior';
+import { projectData } from 'common/src/data/Velo';
 
 const Project = () => {
   const { title, slogan, thumb_url, projects } = projectData;
@@ -41,8 +41,8 @@ const Project = () => {
             prevButton={<span className="prev_arrow" />}
           >
             <Fragment>
-              {projects.map(project => (
-                <GlideSlide key={`project_key${project.id}`}>
+              {projects.map((project, id) => (
+                <GlideSlide key={`project_key${id}`}>
                   <TextWrapper>
                     <Text content={project.text} />
                     <Text content={project.text2} />

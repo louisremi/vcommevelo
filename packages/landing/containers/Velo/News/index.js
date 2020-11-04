@@ -9,7 +9,7 @@ import SectionWrapper, {
   NewsItem,
 } from './news.style';
 
-import { newsData } from 'common/src/data/Interior';
+import { newsData } from 'common/src/data/Velo';
 
 const News = () => {
   return (
@@ -30,9 +30,9 @@ const News = () => {
           </div>
         </div>
         <NewsWrapper>
-          {newsData.map(item => (
-            <NewsItem key={`news_key${item.id}`}>
-              <Fade bottom delay={60 * item.id}>
+          {newsData.map((item, id) => (
+            <NewsItem key={`news_key${id}`}>
+              <Fade bottom delay={60 * (id + 1)}>
                 <Heading as="h3" content={item.title} />
                 <Text content={item.excerpt} />
                 <Link href={item.link_url}>

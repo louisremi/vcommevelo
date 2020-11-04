@@ -6,10 +6,10 @@ import Heading from 'common/src/components/Heading';
 import Text from 'common/src/components/Text';
 import Button from 'common/src/components/Button';
 import Input from 'common/src/components/Input';
-import { SectionHeader } from '../interior.style';
+import { SectionHeader } from '../velo.style';
 import SectionWrapper, { FormWrapper, FormGroup } from './newsletter.style';
 
-import { newsletterData } from 'common/src/data/Interior';
+import { newsletterData } from 'common/src/data/Velo';
 
 const Newsletter = () => {
   const { title, slogan, note } = newsletterData;

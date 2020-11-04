@@ -611,6 +611,10 @@ const SectionHeader = styled.header`
     text-align: left;
   }
 
+  h5:before {
+    content: '# ';
+  }
+
   h5 {
     color: ${themeGet('colors.link', '#352FD9')};
     font-size: 16px;

@@ -20,8 +20,8 @@ const Carousel = ({ data }) => {
       <div className="slide__wrapper">
         <div className="glide__track" data-glide-el="track">
           <ul className="glide__slides">
-            {data.map(item => (
-              <li className="glide__slide" key={`glide__slide--key${item.id}`}>
+            {data.map((item, id) => (
+              <li className="glide__slide" key={`glide__slide--key${id}`}>
                 <div className="testimonial_card">
                   <div className="user_info">
                     <Heading as="h3" content={item.name} />
@@ -56,11 +56,11 @@ const Carousel = ({ data }) => {
         </div>
       </div>
       <div className="glide__bullets" data-glide-el="controls[nav]">
-        {data.map(item => (
+        {data.map((item, id) => (
           <button
             className="glide__bullet"
-            data-glide-dir={`=${item.id}`}
-            key={`glide_bullet--key${item.id}`}
+            data-glide-dir={`=${id}`}
+            key={`glide_bullet--key${id}`}
           >
             <Image src={item.avatar} alt={item.name} />
           </button>

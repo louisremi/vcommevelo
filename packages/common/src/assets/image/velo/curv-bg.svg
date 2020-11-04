@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1920.698"
+   height="1039.86"
+   viewBox="0 0 1920.698 1039.86"
+   version="1.1"
+   id="svg3"
+   sodipodi:docname="curv-bg.svg"
+   inkscape:version="1.0.1 (0767f8302a, 2020-10-17)">
+  <metadata
+     id="metadata9">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs7" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1848"
+     inkscape:window-height="1016"
+     id="namedview5"
+     showgrid="false"
+     inkscape:zoom="0.64143348"
+     inkscape:cx="957.19909"
+     inkscape:cy="520.57671"
+     inkscape:window-x="72"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3" />
+  <path
+     id="Union_1"
+     data-name="Union 1"
+     d="M2478.763,1086.034h-1920v-895l1.99.4c-1.86-.593-2.773-.969-2.682-1.116C637.938,61.626,902.989,6.864,1101.929,76.859c170.834,60.108,386.944,225.461,482.145,322.375l1.849.375c22.367,15.354,46.634,30.875,72.13,46.129,26.562,15.9,54.833,31.726,84.029,47.055a2146.3,2146.3,0,0,0,201.05,92.166c27.967,11.166,56.131,21,83.712,29.225,26.21,7.818,52.52,14.372,78.2,19.48,24.337,4.842,48.662,8.5,72.3,10.862,22.346,2.237,44.557,3.37,66.019,3.369a558.993,558.993,0,0,0,81.138-5.728,434.051,434.051,0,0,0,66.992-15.118,301.249,301.249,0,0,0,51.778-21.42,202.828,202.828,0,0,0,19.85-12.108A141.745,141.745,0,0,0,2478.763,581v505.037h0Z"
+     transform="translate(-558.065 -46.175)"
+     fill="#352fd9"
+     opacity="0.041"
+     style="fill:#00a8c6;fill-opacity:1;opacity:0.07" />
+</svg>

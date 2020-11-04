@@ -1,19 +1,19 @@
 import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
 
-import map from 'common/src/assets/image/interior/map.png';
+import map from 'common/src/assets/image/velo/map.png';
 
 const FooterWrapper = styled.footer`
   width: 100%;
   padding: 70px 0 40px;
-  background-color: ${themeGet('colors.heading', '#171717')};
+  background-color: ${themeGet('colors.footer', '#171717')};
   background-image: url(${map});
   background-repeat: no-repeat;
   background-position: top center;
 
   .col-one {
     .logo {
-      width: 110px;
+      width: 200px;
       margin-bottom: 20px;
     }
   }
@@ -61,7 +61,7 @@ export const CurvIcon = styled.div`
   svg {
     width: 100%;
     margin-bottom: -5px;
-    fill: ${themeGet('colors.heading', '#171717')};
+    fill: ${themeGet('colors.footer', '#171717')};
   }
 `;
 
@@ -70,11 +70,16 @@ export const List = styled.ul`
 `;
 
 export const ListItem = styled.li`
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: ${themeGet('colors.lightText', '#7E7E7E')};
+
   a {
-    color: ${themeGet('colors.lightText', '#7E7E7E')};
     font-size: 14px;
     line-height: 35px;
     transition: all 0.3s ease;
+    color: inherit;
 
     &:hover,
     &:focus {
@@ -89,7 +94,7 @@ export const ListItem = styled.li`
 export const SocialList = styled.ul`
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 7px;
 
   li {
     margin-right: 30px;

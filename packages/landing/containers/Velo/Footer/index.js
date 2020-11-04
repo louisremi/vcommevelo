@@ -13,10 +13,10 @@ import FooterWrapper, {
   SocialList,
 } from './footer.style';
 
-import { footerData } from 'common/src/data/Interior';
+import { footerData } from 'common/src/data/Velo';
 
 const Footer = ({ row, col, colOne, colTwo }) => {
-  const { logo, mail, phone, socialLinks, menuWidgets } = footerData;
+  const { logo, email, phone, socialLinks, menuWidgets } = footerData;
   return (
     <Fragment>
       <CurvIcon>
@@ -35,18 +35,23 @@ const Footer = ({ row, col, colOne, colTwo }) => {
             <Box className="col-one" {...colOne}>
               <Logo
                 className="logo"
-                href="/interior"
+                href="/"
                 logoSrc={logo}
-                title="Interior"
+                title="V comme Vélo"
               />
-              <Text className="text" content={mail} />
-              <Text className="text" content={phone} />
+              <List>
+                <ListItem>
+                  <a className="text" href={`mailto:${email}`}>{email}</a>
+                </ListItem>
+                <ListItem>
+                  <a className="text" href={`tel:${phone}`}>{phone}</a>
+                </ListItem>
+              </List>
+              
               <SocialList>
-                {socialLinks.map(item => (
-                  <li className={item.name} key={`link-key${item.id}`}>
-                    <Link href={item.link}>
-                      <a aria-label={item.name}>{item.icon}</a>
-                    </Link>
+                {socialLinks.map((item, id) => (
+                  <li className={item.name} key={`link-key${id}`}>
+                    <a href={item.link} aria-label={item.name}>{item.icon}</a>
                   </li>
                 ))}
               </SocialList>
@@ -54,11 +59,11 @@ const Footer = ({ row, col, colOne, colTwo }) => {
             {/* End of logo column */}
 
             <Box className="col-two" {...colTwo}>
-              {menuWidgets.map(widget => (
+              {menuWidgets.map((widget, widgetId) => (
                 <Box
                   className="col"
                   {...col}
-                  key={`footer__widget-key${widget.id}`}
+                  key={`footer__widget-key${widgetId}`}
                 >
                   <Heading
                     className="widget_title"
@@ -66,10 +71,10 @@ const Footer = ({ row, col, colOne, colTwo }) => {
                     content={widget.title}
                   />
                   <List>
-                    {widget.menu.map(item => (
-                      <ListItem key={`list__item-${item.id}`}>
+                    {widget.menu.map((item, itemId) => (
+                      <ListItem key={`list__item-${itemId}`}>
                         <Link href={item.link}>
-                          <a>{item.text}</a>
+                          <a title={item.text}>{item.text}</a>
                         </Link>
                       </ListItem>
                     ))}
@@ -81,9 +86,9 @@ const Footer = ({ row, col, colOne, colTwo }) => {
           </Box>
           {/* End of widgets row */}
           <Box className="row copyright" {...row}>
-            <Text className="text" content="copyright 2019 @RedQ" />
+            <Text className="text" content={`copyright ${new Date().getFullYear()} @VcommeVelo`} />
             <p>
-              Built & designed with
+              Un site fait maiz', avec
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="11.243"

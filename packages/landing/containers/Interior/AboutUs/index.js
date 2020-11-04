@@ -33,7 +33,7 @@ const AboutUs = () => {
             <Text content={text2} />
             <Link href="#1">
               <a className="learn__more-btn">
-                <span className="btn_text">VISITE SITE</span>
+                <span className="btn_text">VISIT SITE</span>
                 <span className="next_arrow"></span>
               </a>
             </Link>

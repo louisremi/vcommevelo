@@ -5,7 +5,7 @@ import GlideCarousel from 'common/src/components/GlideCarousel';
 import GlideSlide from 'common/src/components/GlideCarousel/glideSlide';
 import GalleryWrapper, { GalleryCard, Button } from './gallery.style';
 
-import { galleryData } from 'common/src/data/Interior';
+import { galleryData } from 'common/src/data/Velo';
 
 const Gallery = () => {
   const glideOptions = {
@@ -33,8 +33,8 @@ const Gallery = () => {
         prevButton={<i className="flaticon-left-arrow" />}
       >
         <Fragment>
-          {galleryData.map(item => (
-            <GlideSlide key={`gallery_key${item.id}`}>
+          {galleryData.map((item, id) => (
+            <GlideSlide key={`gallery_key${id}`}>
               <GalleryCard>
                 <Link href={item.link}>
                   <a>

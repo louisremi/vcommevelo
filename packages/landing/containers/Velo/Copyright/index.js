@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Text from 'common/src/components/Text';
 import CopyrightWrapper from './copyright.style';
 
-import { socialProfile } from 'common/src/data/Interior';
+import { socialProfile } from 'common/src/data/Velo';
 
 const Copyright = () => {
   return (

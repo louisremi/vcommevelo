@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import Heading from 'common/src/components/Heading';
 import Container from 'common/src/components/UI/Container';
 import Carousel from './carousel';
-import { SectionHeader, CircleLoader } from '../interior.style';
+import { SectionHeader, CircleLoader } from '../velo.style';
 import SectionWrapper, { CarouselWrapper } from './testimonial.style';
 
-import { testimonialData } from 'common/src/data/Interior';
+import { testimonialData } from 'common/src/data/Velo';
 
 const Testimonial = () => {
   const { title, slogan, reviews } = testimonialData;
