@@ -100,17 +100,23 @@ const ContactFromWrapper = styled.div`
 `;
 
 const PanelsWrapper = styled.div`
-  display: table;
-  width: 200%;
-  transition: margin-left 350ms;
+  width: 100%;
+  overflow-x: hidden;
 
-  &.subscribed {
+  .twoPanels {
+    display: table;
+    width: 200%;
+    transition: margin-left 350ms;
+  }
+
+  .twoPanels.subscribed {
     margin-left: -100%;
   }
 
   .panel {
     display: table-cell;
     width: 50%;
+    vertical-align: middle;
   }
 }
 `;
@@ -119,7 +125,6 @@ const SectionMainWrapper = styled.div`
   margin: 80px 0 -150px;
   z-index: 1;
   position: relative;
-  overflow-x: hidden;
   @media (max-width: 768px) {
     padding-left: 30px;
     padding-right: 30px;

@@ -61,30 +61,32 @@ const Newsletter = ({
             />
           </Box>
           <Box {...row}>
-            <Box {...contactForm}>
-              <PanelsWrapper className={isSubscribed ? 'subscribed' : ''}>
-                <div className="panel">
-                  <ContactFromWrapper>
-                    <Input
-                      inputType="email"
-                      name="EMAIL"
-                      placeholder="Votre adresse email"
-                      iconPosition="right"
-                      isMaterial={false}
-                      className="email_input"
-                      aria-label="email"
-                    />
-                    <input {...button} type="submit"
-                      value="S'ABONNER"
-                      disabled={isLoading}
-                      onClick={handleSubmit}
-                    />
-                  </ContactFromWrapper>
-                </div>
-                <div className="panel">
-                  <p className="subscribedMessage" aria-hidden="true">
-                    { confirmation }
-                  </p>
+            <Box {...contactForm} >
+              <PanelsWrapper>
+                <div className={`twoPanels ${isSubscribed ? 'subscribed' : ''}`}>
+                  <div className="panel">
+                    <ContactFromWrapper>
+                      <Input
+                        inputType="email"
+                        name="EMAIL"
+                        placeholder="Votre adresse email"
+                        iconPosition="right"
+                        isMaterial={false}
+                        className="email_input"
+                        aria-label="email"
+                      />
+                      <input {...button} type="submit"
+                        value="S'ABONNER"
+                        disabled={isLoading}
+                        onClick={handleSubmit}
+                      />
+                    </ContactFromWrapper>
+                  </div>
+                  <div className="panel">
+                    <p className="subscribedMessage" aria-hidden="true">
+                      { confirmation }
+                    </p>
+                  </div>
                 </div>
               </PanelsWrapper>
               <Box className="follow">
