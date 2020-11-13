@@ -5,6 +5,7 @@ import InputField, { EyeButton } from './input.style';
 const Input = ({
   label,
   value,
+  name,
   onBlur,
   onFocus,
   onChange,
@@ -83,12 +84,10 @@ const Input = ({
     addAllClasses.push(`icon-${iconPosition}`);
   }
 
-  // Add new class
   if (className) {
     addAllClasses.push(className);
   }
 
-  // if lable is not empty
   if (label) {
     htmlFor = label.replace(/\s+/g, '_').toLowerCase();
   }
@@ -106,7 +105,7 @@ const Input = ({
         <textarea
           {...props}
           id={htmlFor}
-          name={htmlFor}
+          name={name}
           value={state.value}
           onChange={handleOnChange}
           onBlur={handleOnBlur}
@@ -121,7 +120,7 @@ const Input = ({
           <input
             {...props}
             id={htmlFor}
-            name={htmlFor}
+            name={name}
             type={state.toggle ? 'password' : 'text'}
             value={state.value}
             onChange={handleOnChange}
@@ -146,7 +145,7 @@ const Input = ({
           <input
             {...props}
             id={htmlFor}
-            name={htmlFor}
+            name={name}
             type={inputType}
             value={state.value}
             onChange={handleOnChange}

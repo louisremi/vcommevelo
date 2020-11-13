@@ -160,7 +160,7 @@ export const Button = styled.button`
     font-size: 22px;
     font-weight: 600;
     text-transform: capitalize;
-    color: ${themeGet('colors.label', '#C6C6C6')};
+    color: ${themeGet('colors.white', '#C6C6C6')};
     z-index: 2;
 
     @media only screen and (max-width: 1440px) {

@@ -383,44 +383,49 @@ export const galleryData = [
 ];
 
 /* ------------------------------------ */
+// Social data
+/* ------------------------------------ */
+import { facebook } from 'react-icons-kit/fa/facebook';
+import { instagram } from 'react-icons-kit/fa/instagram';
+import { twitter } from 'react-icons-kit/fa/twitter';
+
+export const socialData = [
+  {
+    icon: <Icon icon={facebook} />,
+    name: 'facebook',
+    link: 'https://www.facebook.com/vcommevelo',
+  },
+  {
+    icon: <Icon icon={instagram} />,
+    name: 'instagram',
+    link: 'https://www.instagram.com/vcommevelo_lyon',
+  },
+  {
+    icon: <Icon icon={twitter} />,
+    name: 'twitter',
+    link: 'https://www.twitter.com/vcommevelo',
+  },
+];
+
+/* ------------------------------------ */
 // Newsletter data
 /* ------------------------------------ */
 export const newsletterData = {
-  title: 'SUBSCRIBE NEWSLETTER',
-  slogan: 'Don’t Miss Out Any Offer',
-  note:
-    'Note: Please call us at 12pm to 8am. otherwise our customer supporter will not available to reach your call, but you can drop mail anytime.',
+  title: 'Suivez notre aventure par email',
+  follow: 'Ou suivez nous sur les réseaux sociaux',
+  confirmation: 'Une demande de confirmation de votre inscription vous a été envoyée !'
 };
 
 /* ------------------------------------ */
 // Footer data
 /* ------------------------------------ */
-import { facebook } from 'react-icons-kit/fa/facebook';
-import { instagram } from 'react-icons-kit/fa/instagram';
-import { twitter } from 'react-icons-kit/fa/twitter';
+
 import logo from 'common/src/assets/image/velo/logo.png';
 
 export const footerData = {
   logo: logo,
   email: 'hello@vcommevelo.fr',
   phone: '06 71 11 41 71',
-  socialLinks: [
-    {
-      icon: <Icon icon={facebook} />,
-      name: 'facebook',
-      link: 'https://www.facebook.com/vcommevelo',
-    },
-    {
-      icon: <Icon icon={instagram} />,
-      name: 'instagram',
-      link: 'https://www.instagram.com/vcommevelo_lyon',
-    },
-    {
-      icon: <Icon icon={twitter} />,
-      name: 'twitter',
-      link: 'https://www.twitter.com/vcommevelo',
-    },
-  ],
   menuWidgets: [
     {
       title: 'Boutique',

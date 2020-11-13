@@ -34,7 +34,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h2 {
-    color: ${themeGet('colors.heading', '#191919')};
+    color: ${themeGet('colors.black', '#191919')};
     font-size: 40px;
     line-height: 56px;
     font-family: 'Bree Serif', serif;
@@ -50,7 +50,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h3 {
-    color: ${themeGet('colors.heading3', '#273343')};
+    color: ${themeGet('colors.black', '#273343')};
     font-size: 24px;
     line-height: 36px;
     font-family: 'Roboto', sans-serif;
@@ -77,7 +77,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   p {
-    color: ${themeGet('colors.text', '#4E5865')};
+    color: ${themeGet('colors.black', '#4E5865')};
     font-size: 16px;
     line-height: 26px;
     font-family: 'Roboto', sans-serif;
@@ -86,6 +86,9 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  a {
+    color: ${themeGet('colors.primary')};
+  }
 
   section {
     position: relative;
@@ -100,7 +103,7 @@ const GlobalStyle = createGlobalStyle`
   button.modalCloseBtn {
     color: ${themeGet('colors.white', '#ffffff')} !important;
     &.alt {
-      color: ${themeGet('colors.heading', '#191919')} !important;
+      color: ${themeGet('colors.black', '#191919')} !important;
       background-color: ${themeGet('colors.primary', '#FDEF00')} !important;
       box-shadow: 0 8px 38px rgba(253, 239, 0, 0.5) !important;
     }
@@ -150,9 +153,9 @@ const GlobalStyle = createGlobalStyle`
 
   .reuseModalHolder.login-modal{
     .reusecore__button {
-      color: ${themeGet('colors.link', '#352FD9')};
+      color: ${themeGet('colors.secondary', '#352FD9')};
       &.default {
-        color: ${themeGet('colors.heading', '#191919')};
+        color: ${themeGet('colors.black', '#191919')};
         background-color: ${themeGet('colors.primary', '#FDEF00')};
         &:hover {
           box-shadow: none;
@@ -201,11 +204,11 @@ const GlobalStyle = createGlobalStyle`
         > i svg {
           width: auto;
           height: 35px;
-          fill: ${themeGet('colors.heading', '#191919')};
+          fill: ${themeGet('colors.black', '#191919')};
         }
         &:hover {
           > i svg {
-            fill: ${themeGet('colors.link', '#352FD9')};
+            fill: ${themeGet('colors.secondary', '#352FD9')};
           }
         }
       }
@@ -233,7 +236,7 @@ const GlobalStyle = createGlobalStyle`
           }
           a {
             display: block;
-            color: ${themeGet('colors.heading', '#060F1E')};
+            color: ${themeGet('colors.black', '#060F1E')};
             font-size: 22px;
             font-weight: 400;
             transition: all 0.3s ease;
@@ -241,12 +244,12 @@ const GlobalStyle = createGlobalStyle`
               font-size: 20px;
             }
             &:hover {
-              color: ${themeGet('colors.link', '#352FD9')};
+              color: ${themeGet('colors.secondary', '#352FD9')};
             }
           }
           &.is-current {
             a {
-              color: ${themeGet('colors.link', '#352FD9')};
+              color: ${themeGet('colors.secondary', '#352FD9')};
               position: relative;
               &:before {
                 content: '';
@@ -254,7 +257,7 @@ const GlobalStyle = createGlobalStyle`
                 width: 8px;
                 height: 8px;
                 border-radius: 50%;
-                background-color: ${themeGet('colors.link', '#352FD9')};
+                background-color: ${themeGet('colors.secondary', '#352FD9')};
                 position: absolute;
                 top: calc(50% - 8px / 2);
                 left: -20px;
@@ -301,7 +304,7 @@ const VeloWrapper = styled.div`
     transition: padding 0.2s ease, background-color 0.1s ease;
 
     .reusecore__button {
-      color: ${themeGet('colors.label', '#C6C6C6')};
+      color: ${themeGet('colors.white', '#C6C6C6')};
       font-size: 20px;
       margin-right: 10px;
       @media only screen and (max-width: 1440px) {
@@ -312,7 +315,7 @@ const VeloWrapper = styled.div`
 
     .hamburgMenu__bar {
       > span {
-        background-color: ${themeGet('colors.label', '#C6C6C6')};
+        background-color: ${themeGet('colors.white', '#C6C6C6')};
       }
     }
   }
@@ -324,20 +327,20 @@ const VeloWrapper = styled.div`
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 
       .reusecore__button {
-        color: ${themeGet('colors.heading', '#060F1E')};
+        color: ${themeGet('colors.black', '#060F1E')};
       }
 
       .hamburgMenu__bar {
         span {
-          background-color: ${themeGet('colors.heading', '#060F1E')};
+          background-color: ${themeGet('colors.black', '#060F1E')};
         }
       }
 
       .smooth_scroll {
-        color: ${themeGet('colors.heading', '#060F1E')};
+        color: ${themeGet('colors.black', '#060F1E')};
         transition: color 0.3s ease;
         &:hover {
-          color: ${themeGet('colors.text', '#294859')};
+          color: ${themeGet('colors.black', '#294859')};
         }
       }
     }
@@ -349,7 +352,7 @@ const VeloWrapper = styled.div`
   .learn__more-btn {
     display: inline-flex;
     align-items: center;
-    color: ${themeGet('colors.link', '#352FD9')};
+    color: ${themeGet('colors.secondary', '#352FD9')};
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0;
@@ -367,7 +370,7 @@ const VeloWrapper = styled.div`
     .next_arrow {
       width: 40px;
       height: 2px;
-      background-color: ${themeGet('colors.link', '#352FD9')};
+      background-color: ${themeGet('colors.secondary', '#352FD9')};
       position: relative;
 
       &::before,
@@ -377,7 +380,7 @@ const VeloWrapper = styled.div`
         width: 12px;
         height: 2px;
         border-radius: 4px;
-        background-color: ${themeGet('colors.link', '#352FD9')};
+        background-color: ${themeGet('colors.secondary', '#352FD9')};
         position: absolute;
         right: 0;
         transition: all 0.3s ease;
@@ -404,7 +407,7 @@ const VeloWrapper = styled.div`
   .read_more__btn {
     display: inline-flex;
     align-items: center;
-    color: ${themeGet('colors.heading3', '#273343')};
+    color: ${themeGet('colors.black', '#273343')};
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -450,18 +453,18 @@ const VeloWrapper = styled.div`
         width: 28px;
         left: calc(100% + 10px);
         border-radius: 4px;
-        background-color: ${themeGet('colors.link', '#352FD9')};
+        background-color: ${themeGet('colors.secondary', '#352FD9')};
 
         &::before {
           transform: rotate(-42deg);
           transform-origin: top right;
-          background-color: ${themeGet('colors.link', '#352FD9')};
+          background-color: ${themeGet('colors.secondary', '#352FD9')};
         }
 
         &::after {
           transform: rotate(42deg);
           transform-origin: 10px 2px;
-          background-color: ${themeGet('colors.link', '#352FD9')};
+          background-color: ${themeGet('colors.secondary', '#352FD9')};
         }
       }
     }
@@ -469,7 +472,7 @@ const VeloWrapper = styled.div`
     &:hover,
     &:focus {
       outline: 0;
-      color: ${themeGet('colors.link', '#352FD9')};
+      color: ${themeGet('colors.secondary', '#352FD9')};
     }
   }
 
@@ -498,7 +501,7 @@ const VeloWrapper = styled.div`
         display: block;
         width: 24px;
         height: 2px;
-        background-color: ${themeGet('colors.label', '#C6C6C6')};
+        background-color: ${themeGet('colors.white', '#C6C6C6')};
         transition: width 0.3s ease;
         position: relative;
         @media only screen and (max-width: 667px) {
@@ -512,7 +515,7 @@ const VeloWrapper = styled.div`
           width: 14px;
           height: 2px;
           border-radius: 4px;
-          background-color: ${themeGet('colors.label', '#C6C6C6')};
+          background-color: ${themeGet('colors.white', '#C6C6C6')};
           position: absolute;
           z-index: 1;
           transition: all 0.3s ease;
@@ -616,7 +619,7 @@ const SectionHeader = styled.header`
   }
 
   h5 {
-    color: ${themeGet('colors.link', '#352FD9')};
+    color: ${themeGet('colors.secondary', '#352FD9')};
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
@@ -631,7 +634,7 @@ const SectionHeader = styled.header`
   }
 
   h2 {
-    color: ${themeGet('colors.heading', '#191919')};
+    color: ${themeGet('colors.black', '#191919')};
     font-size: 36px;
     line-height: 54px;
     font-weight: 600;
@@ -692,7 +695,7 @@ const CircleLoader = styled.div`
   &.alt {
     .circle {
       &:nth-of-type(2) {
-        background-color: ${themeGet('colors.heading', '#191919')};
+        background-color: ${themeGet('colors.black', '#191919')};
       }
     }
   }

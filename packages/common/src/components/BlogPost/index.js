@@ -37,7 +37,7 @@ BlogPost.propTypes = {
   thumbUrl: PropTypes.string,
   title: PropTypes.string,
   excerpt: PropTypes.string,
-  link: PropTypes.element,
+  link: PropTypes.string,
 };
 
 export default BlogPost;

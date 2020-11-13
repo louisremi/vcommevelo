@@ -92,30 +92,30 @@ export const ProjectWrapper = styled.div`
         > span {
           &.next_arrow {
             width: 45px;
-            background-color: ${themeGet('colors.link', '#352FD9')};
+            background-color: ${themeGet('colors.secondary', '#352FD9')};
             @media only screen and (max-width: 667px) {
               width: 30px;
             }
 
             &::before {
-              background-color: ${themeGet('colors.link', '#352FD9')};
+              background-color: ${themeGet('colors.secondary', '#352FD9')};
               transform: rotate(42deg);
             }
 
             &::after {
               transform: rotate(-42deg);
-              background-color: ${themeGet('colors.link', '#352FD9')};
+              background-color: ${themeGet('colors.secondary', '#352FD9')};
             }
           }
         }
 
         &:hover {
           > span {
-            background-color: ${themeGet('colors.link', '#352FD9')};
+            background-color: ${themeGet('colors.secondary', '#352FD9')};
 
             &::before,
             &::after {
-              background-color: ${themeGet('colors.link', '#352FD9')};
+              background-color: ${themeGet('colors.secondary', '#352FD9')};
             }
           }
         }

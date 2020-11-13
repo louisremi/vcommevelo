@@ -1,136 +1,168 @@
 import styled from 'styled-components';
+
+import hexToRgb from '../../../utils/hexToRgb';
 import { themeGet } from '@styled-system/theme-get';
 
-import error from 'common/src/assets/image/error.svg';
-import success from 'common/src/assets/image/success.svg';
-
-const SectionWrapper = styled.section`
-  padding: 51px 0 130px;
-  background-color: ${themeGet('colors.lightBg', '#fbfafe')};
-  @media only screen and (max-width: 1440px) {
-    padding: 20px 0 100px;
-  }
-
-  @media only screen and (max-width: 767px) {
-    padding: 42px 0;
-    flex-wrap: wrap;
-    padding: 60px 0;
-  }
-
-  @media only screen and (max-width: 480px) {
-    header {
-      padding: 0 30px 40px;
-    }
-  }
-`;
-
-export const FormWrapper = styled.form`
-  max-width: 760px;
-  padding: 0 30px;
-  margin: 0 auto;
-
-  p {
-    text-align: center;
-  }
-`;
-
-export const FormGroup = styled.div`
+const ContactFromWrapper = styled.div`
   display: flex;
-  align-items: center;
-  margin-bottom: 64px;
-  @media only screen and (max-width: 667px) {
-    margin-bottom: 40px;
+  align-items: stretch;
+  width: auto;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+  @media (max-width: 990px) {
+    padding: 0 20px;
+  }
+  @media (max-width: 575px) {
     flex-direction: column;
-  }
-
-  p {
-    margin-bottom: 0;
-  }
-
-  .input_element {
-    width: calc(100% - 132px);
-    display: flex;
     align-items: center;
-    position: relative;
-    padding-right: 20px;
-    @media only screen and (max-width: 667px) {
+    margin-bottom: 25px;
+    button {
       width: 100%;
-      padding-right: 0;
-      margin-bottom: 10px;
     }
+  }
 
-    input {
+  .email_input {
+    flex-grow: 1;
+    @media (max-width: 575px) {
       width: 100%;
-      font-size: 16px;
-      padding: 20px 25px 20px 65px;
-      border-radius: 5px;
-      border: 1px solid #f4f4fd;
-      color: ${themeGet('colors.heading', '#191919')};
-      background-color: ${themeGet('colors.white', '#ffffff')};
-      transition: all 0.3s ease;
-      @media only screen and (max-width: 767px) {
-        padding: 18px 25px 18px 60px;
-      }
-
-      &::placeholder {
-        color: ${themeGet('colors.lightText', '#7E7E7E')};
-      }
-
-      &:focus {
-        border-color: ${themeGet('colors.inactiveIcon', '#EBEBEB')};
-      }
+      margin-right: 0;
+      margin-bottom: 20px;
     }
-
-    .input-icon {
-      position: absolute;
-      left: 22px;
-
-      i {
-        color: ${themeGet('colors.lightText', '#7E7E7E')};
-        svg {
-          width: auto;
-          height: 24px;
+    &.is-material {
+      &.is-focus {
+        label {
+          color: ${themeGet('colors.primary', '#171717')};
+          font-size: 12px;
         }
       }
     }
 
-    &::after {
-      content: '';
-      width: 16px;
-      height: 16px;
-      position: absolute;
-      top: calc(50% - 16px / 2);
-      right: 45px;
-      flex-shrink: 0;
-      @media only screen and (max-width: 767px) {
-        right: 24px;
+    input[type=email] {
+      height: 100%;
+      background: #fff;
+      font-size: 16px;
+      font-weight: 500;
+      color: #343d48;
+      padding: 5px 15px;
+      border-color: #dadada;
+      border-style: solid;
+      border-width: 2px;
+      border-color: ${themeGet('colors.primary', '#171717')};
+      border-radius: 10px;
+      background-color: ${themeGet('colors.primaryUltraLight', '#171717')};
+      height: 84px;
+      @media (max-width: 575px) {
+        height: 60px;
       }
     }
 
-    &.invalid {
-      &::after {
-        background-image: url(${error});
-      }
-    }
-
-    &.valid {
-      &::after {
-        background-image: url(${success});
-      }
+    label {
+      font-size: 14px;
+      color: #343d48;
+      font-weight: 500;
+      padding-left: 10px;
+      top: 5px;
     }
   }
 
-  button.reusecore__button {
-    width: 132px;
+  .field-wrapper {
+    height: 100%;
+  }
+  
+  input[type=submit] {
     height: 60px;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-    @media only screen and (max-width: 667px) {
-      width: 100%;
-      height: 56px;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    padding: 0 22px;
+    border: none;
+    border-radius: 6px;
+    color: ${themeGet('colors.white')};
+    font-weight: bold;
+    cursor: pointer;
+    background-color: ${themeGet('colors.primary', '#171717')};
+    &:hover {
+      background-color: ${themeGet('colors.primaryDark', '#171717')};
+    }
+    @media (max-width: 990px) {
+      right: 40px;
+    }
+    @media (max-width: 575px) {
+      position: relative;
+      right: 0;
+      top: 0;
+      height: 48px;
     }
   }
 `;
 
-export default SectionWrapper;
+const PanelsWrapper = styled.div`
+  display: table;
+  width: 200%;
+  transition: margin-left 350ms;
+
+  &.subscribed {
+    margin-left: -100%;
+  }
+
+  .panel {
+    display: table-cell;
+    width: 50%;
+  }
+}
+`;
+
+const SectionMainWrapper = styled.div`
+  margin: 80px 0 -150px;
+  z-index: 1;
+  position: relative;
+  overflow-x: hidden;
+  @media (max-width: 768px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media (max-width: 480px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .containerClass {
+    border-radius: 20px;
+    background-color: ${themeGet('colors.white', '#FFF')};
+    box-shadow: 0px 0px 94px 6px rgba(${hexToRgb(themeGet('colors.primaryDark', '#FFF'))}, 0.2);
+    padding: 60px 0;
+
+    .follow {
+      margin-top: 25px;
+      text-align: center;
+      @media (max-width: 990px) {
+        padding: 0 20px;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      a {
+        color: ${themeGet('colors.black')}
+      }
+
+      a:hover {
+        color: ${themeGet('colors.primary')}
+      }
+    }
+  } 
+
+  .subscribedMessage {
+    padding: 0 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: ${themeGet('colors.inactive')};
+  }
+`;
+export { SectionMainWrapper, PanelsWrapper };
+
+export default ContactFromWrapper;

@@ -13,6 +13,7 @@ import Team from '../containers/Velo/Team';
 import News from '../containers/Velo/News';
 import Testimonial from '../containers/Velo/Testimonial';
 import Gallery from '../containers/Velo/Gallery';
+import Newsletter from '../containers/Velo/Newsletter';
 import Footer from '../containers/Velo/Footer';
 import { ResetCSS } from 'common/src/assets/css/style';
 import {
@@ -64,6 +65,7 @@ export default () => {
             <Gallery />
             */}
           </ContentWrapper>
+          <Newsletter />
           <Footer />
         </VeloWrapper>
         {/* End of markup section. */}

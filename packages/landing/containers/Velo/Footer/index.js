@@ -6,17 +6,17 @@ import Text from 'common/src/components/Text';
 import Heading from 'common/src/components/Heading';
 import Logo from 'common/src/components/UIElements/Logo';
 import Container from 'common/src/components/UI/Container';
+import SocialList from '../SocialList'
 import FooterWrapper, {
   CurvIcon,
   List,
   ListItem,
-  SocialList,
 } from './footer.style';
 
 import { footerData } from 'common/src/data/Velo';
 
 const Footer = ({ row, col, colOne, colTwo }) => {
-  const { logo, email, phone, socialLinks, menuWidgets } = footerData;
+  const { logo, email, phone, menuWidgets } = footerData;
   return (
     <Fragment>
       <CurvIcon>
@@ -48,13 +48,7 @@ const Footer = ({ row, col, colOne, colTwo }) => {
                 </ListItem>
               </List>
               
-              <SocialList>
-                {socialLinks.map((item, id) => (
-                  <li className={item.name} key={`link-key${id}`}>
-                    <a href={item.link} aria-label={item.name}>{item.icon}</a>
-                  </li>
-                ))}
-              </SocialList>
+              <SocialList />
             </Box>
             {/* End of logo column */}
 

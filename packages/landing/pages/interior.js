@@ -11,6 +11,7 @@ import AboutUs from '../containers/Interior/AboutUs';
 import Project from '../containers/Interior/Project';
 import Team from '../containers/Interior/Team';
 import News from '../containers/Interior/News';
+import Newsletter from '../containers/Interior/Newsletter';
 import Testimonial from '../containers/Interior/Testimonial';
 import Gallery from '../containers/Interior/Gallery';
 import Footer from '../containers/Interior/Footer';
@@ -59,6 +60,7 @@ export default () => {
             <Project />
             <Team />
             <News />
+            <Newsletter />
             <Testimonial />
             <Gallery />
           </ContentWrapper>
