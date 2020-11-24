@@ -99,6 +99,58 @@ const GlobalStyle = createGlobalStyle`
     height: auto;
   }
 
+  /* Navbar style */
+  .reusecore__navbar {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 22px 0;
+    transition: padding 0.2s ease, background-color 0.1s ease;
+
+    .reusecore__button {
+      color: ${themeGet('colors.white', '#C6C6C6')};
+      font-size: 20px;
+      margin-right: 10px;
+      @media only screen and (max-width: 1440px) {
+        font-size: 18px;
+        margin-right: 7px;
+      }
+    }
+
+    .hamburgMenu__bar {
+      > span {
+        background-color: ${themeGet('colors.white', '#C6C6C6')};
+      }
+    }
+  }
+
+  .sticky-nav-active {
+    .reusecore__navbar {
+      padding: 16px 0;
+      background-color: ${themeGet('colors.white', '#ffffff')};
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+      .reusecore__button {
+        color: ${themeGet('colors.black', '#060F1E')};
+      }
+
+      .hamburgMenu__bar {
+        span {
+          background-color: ${themeGet('colors.black', '#060F1E')};
+        }
+      }
+
+      .smooth_scroll {
+        color: ${themeGet('colors.black', '#060F1E')};
+        transition: color 0.3s ease;
+        &:hover {
+          color: ${themeGet('colors.black', '#294859')};
+        }
+      }
+    }
+  }
+
   /* Modal style */ 
   button.modalCloseBtn {
     color: ${themeGet('colors.white', '#ffffff')} !important;
@@ -289,60 +341,6 @@ const VeloWrapper = styled.div`
   @media only screen and (max-width: 1440px) {
     .container {
       max-width: 1260px;
-    }
-  }
-
-  /* ------------------------------- */
-  /* Navbar style */
-  /* ------------------------------- */
-  .reusecore__navbar {
-    width: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    padding: 22px 0;
-    transition: padding 0.2s ease, background-color 0.1s ease;
-
-    .reusecore__button {
-      color: ${themeGet('colors.white', '#C6C6C6')};
-      font-size: 20px;
-      margin-right: 10px;
-      @media only screen and (max-width: 1440px) {
-        font-size: 18px;
-        margin-right: 7px;
-      }
-    }
-
-    .hamburgMenu__bar {
-      > span {
-        background-color: ${themeGet('colors.white', '#C6C6C6')};
-      }
-    }
-  }
-
-  .sticky-nav-active {
-    .reusecore__navbar {
-      padding: 16px 0;
-      background-color: ${themeGet('colors.white', '#ffffff')};
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-
-      .reusecore__button {
-        color: ${themeGet('colors.black', '#060F1E')};
-      }
-
-      .hamburgMenu__bar {
-        span {
-          background-color: ${themeGet('colors.black', '#060F1E')};
-        }
-      }
-
-      .smooth_scroll {
-        color: ${themeGet('colors.black', '#060F1E')};
-        transition: color 0.3s ease;
-        &:hover {
-          color: ${themeGet('colors.black', '#294859')};
-        }
-      }
     }
   }
 

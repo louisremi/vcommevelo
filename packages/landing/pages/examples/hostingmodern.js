@@ -6,22 +6,22 @@ import { theme } from 'common/src/theme/hostingModern';
 import {
   GlobalStyle,
   ContentWrapper,
-} from '../containers/HostingModern/hostingModern.style';
+} from '../../containers/HostingModern/hostingModern.style';
 import { ResetCSS } from 'common/src/assets/css/style';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
-import TopBar from '../containers/HostingModern/TopBar';
-import Navbar from '../containers/HostingModern/Navbar';
-import Banner from '../containers/HostingModern/Banner';
-import Service from '../containers/HostingModern/Service';
-import Feature from '../containers/HostingModern/Feature';
-import UltimateFeature from '../containers/HostingModern/UltimateFeature';
-import CustomerSupport from '../containers/HostingModern/CustomerSupport';
-import Pricing from '../containers/HostingModern/Pricing';
-import Testimonials from '../containers/HostingModern/Testimonials';
-import NewsFeed from '../containers/HostingModern/NewsFeed';
-import Faq from '../containers/HostingModern/Faq';
-import CallToAction from '../containers/HostingModern/CallToAction';
-import Footer from '../containers/HostingModern/Footer';
+import TopBar from '../../containers/HostingModern/TopBar';
+import Navbar from '../../containers/HostingModern/Navbar';
+import Banner from '../../containers/HostingModern/Banner';
+import Service from '../../containers/HostingModern/Service';
+import Feature from '../../containers/HostingModern/Feature';
+import UltimateFeature from '../../containers/HostingModern/UltimateFeature';
+import CustomerSupport from '../../containers/HostingModern/CustomerSupport';
+import Pricing from '../../containers/HostingModern/Pricing';
+import Testimonials from '../../containers/HostingModern/Testimonials';
+import NewsFeed from '../../containers/HostingModern/NewsFeed';
+import Faq from '../../containers/HostingModern/Faq';
+import CallToAction from '../../containers/HostingModern/CallToAction';
+import Footer from '../../containers/HostingModern/Footer';
 
 export default () => {
   return (

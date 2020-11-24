@@ -3,23 +3,23 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from 'common/src/theme/appModern';
 import { ResetCSS } from 'common/src/assets/css/style';
 import Sticky from 'react-stickynode';
-import Navbar from '../containers/CryptoModern/Navbar';
-import Banner from '../containers/CryptoModern/Banner';
-import CountDown from '../containers/CryptoModern/CountDown';
-import Features from '../containers/CryptoModern/FeatureSection';
-import WorkHistory from '../containers/CryptoModern/WorkHistory';
-import Investment from '../containers/CryptoModern/Investment';
-import FundRaising from '../containers/CryptoModern/FundRaising';
-import Privacypolicy from '../containers/CryptoModern/Privacy';
-import WalletSection from '../containers/CryptoModern/WalletSection';
-import MapSection from '../containers/CryptoModern/MapSection';
-import FaqSection from '../containers/CryptoModern/FaqSection';
-import Newsletter from '../containers/CryptoModern/Newsletter';
-import Footer from '../containers/CryptoModern/Footer';
+import Navbar from '../../containers/CryptoModern/Navbar';
+import Banner from '../../containers/CryptoModern/Banner';
+import CountDown from '../../containers/CryptoModern/CountDown';
+import Features from '../../containers/CryptoModern/FeatureSection';
+import WorkHistory from '../../containers/CryptoModern/WorkHistory';
+import Investment from '../../containers/CryptoModern/Investment';
+import FundRaising from '../../containers/CryptoModern/FundRaising';
+import Privacypolicy from '../../containers/CryptoModern/Privacy';
+import WalletSection from '../../containers/CryptoModern/WalletSection';
+import MapSection from '../../containers/CryptoModern/MapSection';
+import FaqSection from '../../containers/CryptoModern/FaqSection';
+import Newsletter from '../../containers/CryptoModern/Newsletter';
+import Footer from '../../containers/CryptoModern/Footer';
 import GlobalStyle, {
   CryptoWrapper,
   ContentWrapper,
-} from '../containers/CryptoModern/cryptoModern.style';
+} from '../../containers/CryptoModern/cryptoModern.style';
 
 export default function() {
   return (

@@ -30,7 +30,7 @@ export const menuData = [
   },
   {
     label: 'Boutique',
-    path: '/boutique-de-velo-a-lyon',
+    path: 'https://shop.vcommevelo.fr/collections/all',
     offset: '80',
   },
   {
@@ -93,9 +93,9 @@ export const serviceData = {
       icon: venteIcon,
       title: 'Boutique',
       description: `De bons vélos d'occasion, vintage distingués, ou récents taillés pour la route. Révisés et prêts à rouler !`,
-      link: '/boutique-de-velo-a-lyon'
+      link: 'https://shop.vcommevelo.fr/collections/all'
       /*
-        Que vous cherchiez un velo vintage pour vous déplacer dans la ville de manière distinguée, 
+        Que vous cherchiez un velo vintage pour vous déplacer dans la ville de manière distinguée,
         ou un vélo de course vous permettant aussi bien d\'attaquer les pentes de la Croix Rousse,
         de Fourvière que des Monts d\'Or, nous avons un vélo d'occasion pour vous.
         Nos vélos sont entièrement révisés (jeu et graissage des roulements, patins, pneus, chaîne et pignons),
@@ -143,7 +143,7 @@ export const aboutData = {
     tout en apportant notre petite pierre à l'édifice de la #vélorution !
   `,
   link_lbl: 'Sauvez une abeille, achetez un vélo',
-  link: '/boutique-de-velo-a-lyon',
+  link: 'https://shop.vcommevelo.fr/collections/velo',
 };
 
 /* ------------------------------------ */
@@ -383,6 +383,55 @@ export const galleryData = [
 ];
 
 /* ------------------------------------ */
+// Products data
+/* ------------------------------------ */
+import IconOne from '../../assets/image/hosting/icon1.svg';
+import IconTwo from '../../assets/image/hosting/icon2.svg';
+import IconThree from '../../assets/image/hosting/icon3.svg';
+import IconFour from '../../assets/image/hosting/icon4.svg';
+import IconFive from '../../assets/image/hosting/icon5.svg';
+import IconSix from '../../assets/image/hosting/icon6.svg';
+
+export const productsData = [
+  {
+    title: 'Development Server ',
+    description:
+      'Get Lightspeed Development Server for your website and fly in the web',
+    icon: `${IconOne}`,
+  },
+  {
+    title: 'Web Protection',
+    description:
+      'Best Protection and some tools are provided with our Web servers .',
+    icon: `${IconTwo}`,
+  },
+  {
+    title: 'E-commerce Shop',
+    description:
+      'You can build any kind of E-commerce Shop with payment security tools',
+    icon: `${IconThree}`,
+  },
+  {
+    title: 'Money Back Guarantee',
+    description:
+      'We have provided 30 days money back guarantee for our customer',
+    icon: `${IconFour}`,
+  },
+  {
+    title: 'Client Satisfaction',
+    description:
+      'Client Satisfaction is our first priority and We are best at it',
+    icon: `${IconFive}`,
+  },
+  {
+    title: '24/7 Online Support',
+    description:
+      'A Dedicated support team is always ready to provide best support ',
+    icon: `${IconSix}`,
+  },
+];
+
+/* ------------------------------------ */
 // Social data
 /* ------------------------------------ */
 import { facebook } from 'react-icons-kit/fa/facebook';
@@ -432,15 +481,15 @@ export const footerData = {
       menu: [
         {
           text: 'Vélos vintages',
-          link: '/boutique-de-velo-a-lyon/velo-vintage',
+          link: 'https://shop.vcommevelo.fr/collections/velo-vintage',
         },
         {
           text: 'Vélos de route récents',
-          link: '/boutique-de-velo-a-lyon/velo-recent',
+          link: 'https://shop.vcommevelo.fr/collections/velo-route',
         },
         {
           text: 'Les pièces détachées',
-          link: '/boutique-de-velo-a-lyon/pieces-detachees',
+          link: 'https://shop.vcommevelo.fr/collections/pieces',
         },
       ],
     },

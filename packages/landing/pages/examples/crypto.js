@@ -4,18 +4,18 @@ import Sticky from 'react-stickynode';
 import { ThemeProvider } from 'styled-components';
 import { cryptoTheme } from 'common/src/theme/crypto';
 import { ResetCSS } from 'common/src/assets/css/style';
-import { GlobalStyle, ContentWrapper } from '../containers/Crypto/crypto.style';
+import { GlobalStyle, ContentWrapper } from '../../containers/Crypto/crypto.style';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
-import Navbar from '../containers/Crypto/Navbar';
-import Banner from '../containers/Crypto/BannerSection';
-import BannerSlider from '../containers/Crypto/BannerSlider';
-import Transactions from '../containers/Crypto/Transaction';
-import ControlSections from '../containers/Crypto/ControlSection';
-import TrustedProofSections from '../containers/Crypto/TrustedProof';
-import ScalableSections from '../containers/Crypto/ScalableSection';
-import SlideSections from '../containers/Crypto/CryptoSlides';
-import BetaSections from '../containers/Crypto/BetaSection';
-import Footer from '../containers/Crypto/Footer';
+import Navbar from '../../containers/Crypto/Navbar';
+import Banner from '../../containers/Crypto/BannerSection';
+import BannerSlider from '../../containers/Crypto/BannerSlider';
+import Transactions from '../../containers/Crypto/Transaction';
+import ControlSections from '../../containers/Crypto/ControlSection';
+import TrustedProofSections from '../../containers/Crypto/TrustedProof';
+import ScalableSections from '../../containers/Crypto/ScalableSection';
+import SlideSections from '../../containers/Crypto/CryptoSlides';
+import BetaSections from '../../containers/Crypto/BetaSection';
+import Footer from '../../containers/Crypto/Footer';
 
 export default () => {
   return (

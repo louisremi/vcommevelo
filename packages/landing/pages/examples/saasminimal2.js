@@ -7,20 +7,20 @@ import { ResetCSS } from 'common/src/assets/css/style';
 import {
   GlobalStyle,
   ContentWrapper,
-} from '../containers/SaasMinimal2/saasMinimal2.style';
+} from '../../containers/SaasMinimal2/saasMinimal2.style';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
-import Navbar from '../containers/SaasMinimal2/Navbar';
-import Banner from '../containers/SaasMinimal2/Banner';
-import Features from '../containers/SaasMinimal2/Features';
-import TrackAudience from '../containers/SaasMinimal2/TrackAudience';
-import Pricing from '../containers/SaasMinimal2/Pricing';
-import Clients from '../containers/SaasMinimal2/Clients';
-import Statistics from '../containers/SaasMinimal2/Statistics';
-import AdvancedAnalytics from '../containers/SaasMinimal2/AdvancedAnalytics';
-import Dashboard from '../containers/SaasMinimal2/Dashboard';
-import Testimonial from '../containers/SaasMinimal2/Testimonial';
-import Subscription from '../containers/SaasMinimal2/Subscription';
-import Footer from '../containers/SaasMinimal2/Footer';
+import Navbar from '../../containers/SaasMinimal2/Navbar';
+import Banner from '../../containers/SaasMinimal2/Banner';
+import Features from '../../containers/SaasMinimal2/Features';
+import TrackAudience from '../../containers/SaasMinimal2/TrackAudience';
+import Pricing from '../../containers/SaasMinimal2/Pricing';
+import Clients from '../../containers/SaasMinimal2/Clients';
+import Statistics from '../../containers/SaasMinimal2/Statistics';
+import AdvancedAnalytics from '../../containers/SaasMinimal2/AdvancedAnalytics';
+import Dashboard from '../../containers/SaasMinimal2/Dashboard';
+import Testimonial from '../../containers/SaasMinimal2/Testimonial';
+import Subscription from '../../containers/SaasMinimal2/Subscription';
+import Footer from '../../containers/SaasMinimal2/Footer';
 
 export default () => {
   return (

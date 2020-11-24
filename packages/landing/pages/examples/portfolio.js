@@ -8,19 +8,19 @@ import { ResetCSS } from 'common/src/assets/css/style';
 import {
   GlobalStyle,
   ContentWrapper,
-} from '../containers/Portfolio/portfolio.style';
+} from '../../containers/Portfolio/portfolio.style';
 
-import BannerSection from '../containers/Portfolio/Banner';
-import Navbar from '../containers/Portfolio/Navbar';
-import AwardsSection from '../containers/Portfolio/Awards';
-import PortfolioShowcase from '../containers/Portfolio/PortfolioShowcase';
-import ProcessSection from '../containers/Portfolio/Process';
-import SkillSection from '../containers/Portfolio/Skill';
-import CallToAction from '../containers/Portfolio/CallToAction';
-import TestimonialSection from '../containers/Portfolio/Testimonial';
-import ClientsSection from '../containers/Portfolio/Clients';
-import ContactSection from '../containers/Portfolio/Contact';
-import Footer from '../containers/Portfolio/Footer';
+import BannerSection from '../../containers/Portfolio/Banner';
+import Navbar from '../../containers/Portfolio/Navbar';
+import AwardsSection from '../../containers/Portfolio/Awards';
+import PortfolioShowcase from '../../containers/Portfolio/PortfolioShowcase';
+import ProcessSection from '../../containers/Portfolio/Process';
+import SkillSection from '../../containers/Portfolio/Skill';
+import CallToAction from '../../containers/Portfolio/CallToAction';
+import TestimonialSection from '../../containers/Portfolio/Testimonial';
+import ClientsSection from '../../containers/Portfolio/Clients';
+import ContactSection from '../../containers/Portfolio/Contact';
+import Footer from '../../containers/Portfolio/Footer';
 
 export default () => {
   return (

@@ -11,77 +11,13 @@ import HamburgMenu from 'common/src/components/HamburgMenu';
 import ScrollSpyMenu from 'common/src/components/ScrollSpyMenu';
 import { DrawerContext } from 'common/src/contexts/DrawerContext';
 import { Container } from './navbar.style';
-import SearchPanel from '../SearchPanel';
-import LoginModal from '../LoginModal';
 import Copyright from '../Copyright';
 
 import { menuData } from 'common/src/data/Velo';
 import logo from 'common/src/assets/image/velo/logo.png';
 
-const CloseModalButton = () => (
-  <Button
-    className="modalCloseBtn"
-    variant="fab"
-    onClick={() => closeModal()}
-    icon={<i className="flaticon-plus-symbol" />}
-  />
-);
-
-const CloseModalButtonAlt = () => (
-  <Button
-    className="modalCloseBtn alt"
-    variant="fab"
-    onClick={() => closeModal()}
-    icon={<i className="flaticon-plus-symbol" />}
-  />
-);
-
 const Navbar = ({ navbarStyle, logoStyle }) => {
   const { state, dispatch } = useContext(DrawerContext);
-
-  const handleSearchModal = () => {
-    openModal({
-      config: {
-        className: 'search-modal',
-        disableDragging: true,
-        width: '100%',
-        height: '100%',
-        animationFrom: { transform: 'translateY(100px)' },
-        animationTo: { transform: 'translateY(0)' }, //
-        transition: {
-          mass: 1,
-          tension: 180,
-          friction: 26,
-        },
-      },
-      component: SearchPanel,
-      componentProps: {},
-      closeComponent: CloseModalButtonAlt,
-      closeOnClickOutside: false,
-    });
-  };
-
-  const handleLoginModal = () => {
-    openModal({
-      config: {
-        className: 'login-modal',
-        disableDragging: true,
-        width: '100%',
-        height: '100%',
-        animationFrom: { transform: 'translateY(100px)' },
-        animationTo: { transform: 'translateY(0)' },
-        transition: {
-          mass: 1,
-          tension: 180,
-          friction: 26,
-        },
-      },
-      component: LoginModal,
-      componentProps: {},
-      closeComponent: CloseModalButton,
-      closeOnClickOutside: false,
-    });
-  };
 
   const toggleHandler = () => {
     dispatch({
@@ -93,9 +29,9 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
     <NavbarWrapper {...navbarStyle}>
       <Container>
         <Logo
-          href="/interior"
+          href="/"
           logoSrc={logo}
-          title="Interior"
+          title="Retour à l'accueil"
           logoStyle={logoStyle}
         />
         <div style={{ display: 'flex', alignItems: 'center' }}>

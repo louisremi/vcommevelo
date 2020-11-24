@@ -4,16 +4,9 @@ import Sticky from 'react-stickynode';
 import { ThemeProvider } from 'styled-components';
 import { veloTheme } from 'common/src/theme/velo';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
+import Heading from 'common/src/components/Heading';
 import Navbar from '../containers/Velo/Navbar';
-import Banner from '../containers/Velo/Banner';
-import Service from '../containers/Velo/Service';
-import AboutUs from '../containers/Velo/AboutUs';
-// import Project from '../containers/Velo/Project';
-// import Team from '../containers/Velo/Team';
-// import News from '../containers/Velo/News';
-// import Testimonial from '../containers/Velo/Testimonial';
-// import Gallery from '../containers/Velo/Gallery';
-import Newsletter from '../containers/Velo/Newsletter';
+import Products from '../containers/Boutique/Products'
 import Footer from '../containers/Velo/Footer';
 import { ResetCSS } from 'common/src/assets/css/style';
 import {
@@ -22,14 +15,20 @@ import {
   ContentWrapper,
 } from '../containers/Velo/velo.style';
 
+import {
+  ProductsWrapper,
+  FiltersWrapper,
+  Container
+} from '../containers/Boutique/boutique.style';
+
 export default () => {
   return (
     <ThemeProvider theme={veloTheme}>
       <Fragment>
         <Head>
-          <title>V comme Vélo | Vente, Reprise et entretien vélo, à domicile ou à notre atelier Lyon Part-Dieu</title>
+          <title>V comme Vélo | Boutique de vélos à Lyon</title>
           <meta name="theme-color" content="#00A8C6" />
-          <meta name="description" content="V comme vélo propose de bons vélos d'occasion, vintage ou récent, entièrement révisés par nos soins. Nous pouvons aussi nous déplacer chez vous pour entretenir ou reprendre votre vélo." />
+          <meta name="description" content="Vélos d'occasion vintages ou récents, révisés par nos soins, prêts à rouler." />
           <meta
             name="keywords"
             content="Vélo, bicyclette, réparation, atelier, vélociste"
@@ -54,18 +53,16 @@ export default () => {
             </DrawerProvider>
           </Sticky>
           <ContentWrapper>
-            <Banner />
-            <Service />
-            <AboutUs />
-            {/*
-            <Project />
-            <Team />
-            <News />
-            <Testimonial />
-            <Gallery />
-            */}
+            <Container>
+              <FiltersWrapper>
+                <Heading as="h1" content="La Boutique">
+                </Heading>
+              </FiltersWrapper>
+              <ProductsWrapper>
+                <Products/>
+              </ProductsWrapper>
+            </Container>
           </ContentWrapper>
-          <Newsletter />
           <Footer />
         </VeloWrapper>
         {/* End of markup section. */}

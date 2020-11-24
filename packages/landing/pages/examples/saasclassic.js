@@ -8,19 +8,19 @@ import { ResetCSS } from 'common/src/assets/css/style';
 import {
   GlobalStyle,
   ContentWrapper,
-} from '../containers/SaasClassic/saasClassic.style';
+} from '../../containers/SaasClassic/saasClassic.style';
 
-import BannerSection from '../containers/SaasClassic/Banner';
-import Navbar from '../containers/SaasClassic/Navbar';
-import ServiceSection from '../containers/SaasClassic/Service';
-import PricingSection from '../containers/SaasClassic/Pricing';
-import PartnerSection from '../containers/SaasClassic/Partner';
-import TrialSection from '../containers/SaasClassic/Trial';
-import FeatureSection from '../containers/SaasClassic/Feature';
-import UpdateScreen from '../containers/SaasClassic/UpdateScreen';
-import TestimonialSection from '../containers/SaasClassic/Testimonial';
-import Newsletter from '../containers/SaasClassic/Newsletter';
-import Footer from '../containers/SaasClassic/Footer';
+import BannerSection from '../../containers/SaasClassic/Banner';
+import Navbar from '../../containers/SaasClassic/Navbar';
+import ServiceSection from '../../containers/SaasClassic/Service';
+import PricingSection from '../../containers/SaasClassic/Pricing';
+import PartnerSection from '../../containers/SaasClassic/Partner';
+import TrialSection from '../../containers/SaasClassic/Trial';
+import FeatureSection from '../../containers/SaasClassic/Feature';
+import UpdateScreen from '../../containers/SaasClassic/UpdateScreen';
+import TestimonialSection from '../../containers/SaasClassic/Testimonial';
+import Newsletter from '../../containers/SaasClassic/Newsletter';
+import Footer from '../../containers/SaasClassic/Footer';
 
 export default () => {
   return (

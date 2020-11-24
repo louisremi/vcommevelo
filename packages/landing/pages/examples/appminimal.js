@@ -4,26 +4,26 @@ import { theme } from 'common/src/theme/appminimal';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
 import { ResetCSS } from 'common/src/assets/css/style';
 import Sticky from 'react-stickynode';
-import Navbar from '../containers/AppMinimal/Navbar';
-import Banner from '../containers/AppMinimal/Banner';
-import KeyFeatures from '../containers/AppMinimal/KeyFeatures';
-import ChooseUs from '../containers/AppMinimal/ChooseUs';
-import Features from '../containers/AppMinimal/Features';
-import WalletExperience from '../containers/AppMinimal/WalletExperience';
-import SecureTransaction from '../containers/AppMinimal/SecureTransaction';
-import WalletDashboard from '../containers/AppMinimal/WalletDashboard';
-import Track from '../containers/AppMinimal/Track';
-import Gallery from '../containers/AppMinimal/Gallery';
-import Counter from '../containers/AppMinimal/Counter';
-import Pricing from '../containers/AppMinimal/Pricing';
-import Blog from '../containers/AppMinimal/Blog';
-import CallToAction from '../containers/AppMinimal/CallToAction';
-import Footer from '../containers/AppMinimal/Footer';
+import Navbar from '../../containers/AppMinimal/Navbar';
+import Banner from '../../containers/AppMinimal/Banner';
+import KeyFeatures from '../../containers/AppMinimal/KeyFeatures';
+import ChooseUs from '../../containers/AppMinimal/ChooseUs';
+import Features from '../../containers/AppMinimal/Features';
+import WalletExperience from '../../containers/AppMinimal/WalletExperience';
+import SecureTransaction from '../../containers/AppMinimal/SecureTransaction';
+import WalletDashboard from '../../containers/AppMinimal/WalletDashboard';
+import Track from '../../containers/AppMinimal/Track';
+import Gallery from '../../containers/AppMinimal/Gallery';
+import Counter from '../../containers/AppMinimal/Counter';
+import Pricing from '../../containers/AppMinimal/Pricing';
+import Blog from '../../containers/AppMinimal/Blog';
+import CallToAction from '../../containers/AppMinimal/CallToAction';
+import Footer from '../../containers/AppMinimal/Footer';
 import GlobalStyle, {
   AppWrapper,
   ContentWrapper,
   GradientWrapper,
-} from '../containers/AppMinimal/app-minimal.style';
+} from '../../containers/AppMinimal/app-minimal.style';
 
 export default function () {
   return (

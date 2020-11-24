@@ -39,7 +39,7 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
     >
       {menuItems.map((menu, index) => (
         <li key={`menu-item-${index}`}>
-          {menu.staticLink ? (
+          {menu.path.match(/^https?:/) ? (
             <a href={menu.path}>{menu.label}</a>
           ) : (
             <>

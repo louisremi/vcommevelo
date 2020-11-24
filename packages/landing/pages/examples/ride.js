@@ -4,18 +4,18 @@ import Sticky from 'react-stickynode';
 import { ThemeProvider } from 'styled-components';
 import { rideTheme } from 'common/src/theme/ride';
 import { ResetCSS } from 'common/src/assets/css/style';
-import { GlobalStyle, ContentWrapper } from '../containers/Ride/ride.style';
+import { GlobalStyle, ContentWrapper } from '../../containers/Ride/ride.style';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
-import Navbar from '../containers/Ride/Navbar';
-import Banner from '../containers/Ride/Banner';
-import RideOption from '../containers/Ride/RideOption';
-import LocationSection from '../containers/Ride/LocationSelection';
-import FeatureSection from '../containers/Ride/Feature';
-import LatestNewsSection from '../containers/Ride/LatestNews';
-import HowItWorkSection from '../containers/Ride/HowItWorks';
-import TestimonialSection from '../containers/Ride/TestimonialSection';
-import FeatureSlider from '../containers/Ride/FeatureSlider';
-import Footer from '../containers/Ride/Footer';
+import Navbar from '../../containers/Ride/Navbar';
+import Banner from '../../containers/Ride/Banner';
+import RideOption from '../../containers/Ride/RideOption';
+import LocationSection from '../../containers/Ride/LocationSelection';
+import FeatureSection from '../../containers/Ride/Feature';
+import LatestNewsSection from '../../containers/Ride/LatestNews';
+import HowItWorkSection from '../../containers/Ride/HowItWorks';
+import TestimonialSection from '../../containers/Ride/TestimonialSection';
+import FeatureSlider from '../../containers/Ride/FeatureSlider';
+import Footer from '../../containers/Ride/Footer';
 
 export default () => {
   return (

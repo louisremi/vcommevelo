@@ -8,20 +8,20 @@ import { ResetCSS } from 'common/src/assets/css/style';
 import {
   GlobalStyle,
   ContentWrapper,
-} from '../containers/SaasModern/sassModern.style';
+} from '../../containers/SaasModern/sassModern.style';
 
-import BannerSection from '../containers/SaasModern/Banner';
-import Navbar from '../containers/SaasModern/Navbar';
-import WorkingProcessSection from '../containers/SaasModern/WorkingProcess';
-import PricingSection from '../containers/SaasModern/Pricing';
-import PartnerSection from '../containers/SaasModern/Partner';
-import FaqSection from '../containers/SaasModern/Faq';
-import TrialSection from '../containers/SaasModern/Trial';
-import InfoSection from '../containers/SaasModern/Info';
-import FeatureSection from '../containers/SaasModern/Feature';
-import UpdateScreen from '../containers/SaasModern/UpdateScreen';
-import TestimonialSection from '../containers/SaasModern/Testimonial';
-import Footer from '../containers/SaasModern/Footer';
+import BannerSection from '../../containers/SaasModern/Banner';
+import Navbar from '../../containers/SaasModern/Navbar';
+import WorkingProcessSection from '../../containers/SaasModern/WorkingProcess';
+import PricingSection from '../../containers/SaasModern/Pricing';
+import PartnerSection from '../../containers/SaasModern/Partner';
+import FaqSection from '../../containers/SaasModern/Faq';
+import TrialSection from '../../containers/SaasModern/Trial';
+import InfoSection from '../../containers/SaasModern/Info';
+import FeatureSection from '../../containers/SaasModern/Feature';
+import UpdateScreen from '../../containers/SaasModern/UpdateScreen';
+import TestimonialSection from '../../containers/SaasModern/Testimonial';
+import Footer from '../../containers/SaasModern/Footer';
 
 export default () => {
   return (

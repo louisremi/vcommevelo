@@ -7,17 +7,17 @@ import { ResetCSS } from 'common/src/assets/css/style';
 import {
   GlobalStyle,
   ContentWrapper,
-} from '../containers/AgencyDigital/agencyDigital.style';
+} from '../../containers/AgencyDigital/agencyDigital.style';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
-import Navbar from '../containers/AgencyDigital/Navbar';
-import Banner from '../containers/AgencyDigital/Banner';
-import Service from '../containers/AgencyDigital/Service';
-import CustomerSupport from '../containers/AgencyDigital/CustomerSupport';
-import Pricing from '../containers/AgencyDigital/Pricing';
-import Support from '../containers/AgencyDigital/Support';
-import OurCustomer from '../containers/AgencyDigital/OurCustomer';
-import News from '../containers/AgencyDigital/News';
-import Footer from '../containers/AgencyDigital/Footer';
+import Navbar from '../../containers/AgencyDigital/Navbar';
+import Banner from '../../containers/AgencyDigital/Banner';
+import Service from '../../containers/AgencyDigital/Service';
+import CustomerSupport from '../../containers/AgencyDigital/CustomerSupport';
+import Pricing from '../../containers/AgencyDigital/Pricing';
+import Support from '../../containers/AgencyDigital/Support';
+import OurCustomer from '../../containers/AgencyDigital/OurCustomer';
+import News from '../../containers/AgencyDigital/News';
+import Footer from '../../containers/AgencyDigital/Footer';
 
 export default () => {
   return (

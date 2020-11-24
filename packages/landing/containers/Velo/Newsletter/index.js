@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Fade from 'react-reveal/Fade';
 import PropTypes from 'prop-types';
 import Box from 'common/src/components/Box';
 import Text from 'common/src/components/Text';
@@ -53,53 +54,55 @@ const Newsletter = ({
 
   return (
     <SectionMainWrapper id="newsletterForm">
-      <Box id="contact_section" as="section">
-        <Container className="containerClass">
-          <Box>
-            <FeatureBlock
-              title={<Heading content={titleContent} {...title} />}
-            />
-          </Box>
-          <Box {...row}>
-            <Box {...contactForm} >
-              <PanelsWrapper>
-                <div className={`twoPanels ${isSubscribed ? 'subscribed' : ''}`}>
-                  <div className="panel">
-                    <ContactFromWrapper>
-                      <Input
-                        inputType="email"
-                        name="EMAIL"
-                        placeholder="Votre adresse email"
-                        iconPosition="right"
-                        isMaterial={false}
-                        className="email_input"
-                        aria-label="email"
-                      />
-                      <input {...button} type="submit"
-                        value="S'ABONNER"
-                        disabled={isLoading}
-                        onClick={handleSubmit}
-                      />
-                    </ContactFromWrapper>
+      <Fade bottom>
+        <Box id="contact_section" as="section">
+          <Container className="containerClass">
+            <Box>
+              <FeatureBlock
+                title={<Heading content={titleContent} {...title} />}
+              />
+            </Box>
+            <Box {...row}>
+              <Box {...contactForm} >
+                <PanelsWrapper>
+                  <div className={`twoPanels ${isSubscribed ? 'subscribed' : ''}`}>
+                    <div className="panel">
+                      <ContactFromWrapper>
+                        <Input
+                          inputType="email"
+                          name="EMAIL"
+                          placeholder="Votre adresse email"
+                          iconPosition="right"
+                          isMaterial={false}
+                          className="email_input"
+                          aria-label="email"
+                        />
+                        <input {...button} type="submit"
+                          value="S'ABONNER"
+                          disabled={isLoading}
+                          onClick={handleSubmit}
+                        />
+                      </ContactFromWrapper>
+                    </div>
+                    <div className="panel">
+                      <p className="subscribedMessage" aria-hidden="true">
+                        { confirmation }
+                      </p>
+                    </div>
                   </div>
-                  <div className="panel">
-                    <p className="subscribedMessage" aria-hidden="true">
-                      { confirmation }
-                    </p>
-                  </div>
-                </div>
-              </PanelsWrapper>
-              <Box className="follow">
-                <Text
-                  as="span"
-                  content={follow}
-                />
-                <SocialList />
+                </PanelsWrapper>
+                <Box className="follow">
+                  <Text
+                    as="span"
+                    content={follow}
+                  />
+                  <SocialList />
+                </Box>
               </Box>
             </Box>
-          </Box>
-        </Container>
-      </Box>
+          </Container>
+        </Box>
+        </Fade>
     </SectionMainWrapper>
   );
 };
