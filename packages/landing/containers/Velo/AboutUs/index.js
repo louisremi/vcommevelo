@@ -31,12 +31,10 @@ const AboutUs = () => {
             <Heading dangerouslySetInnerHTML={setTitle(title)} />
             <Text content={text} />
             <Text content={text2} />
-            <Link href={link}>
-              <a className="learn__more-btn">
-                <span className="btn_text">{link_lbl}</span>
-                <span className="next_arrow"></span>
-              </a>
-            </Link>
+            <a href={link} className="learn__more-btn">
+              <span className="btn_text">{link_lbl}</span>
+              <span className="next_arrow"></span>
+            </a>
           </Fade>
         </TextWrapper>
       </Container>

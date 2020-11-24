@@ -31,7 +31,6 @@ export const menuData = [
   {
     label: 'Boutique',
     path: 'https://shop.vcommevelo.fr/collections/all',
-    offset: '80',
   },
   {
     label: 'Reprise',
@@ -489,7 +488,7 @@ export const footerData = {
         },
         {
           text: 'Les pièces détachées',
-          link: 'https://shop.vcommevelo.fr/collections/pieces',
+          link: 'https://shop.vcommevelo.fr/collections/pieces-detachees',
         },
       ],
     },

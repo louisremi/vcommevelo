@@ -47,7 +47,7 @@ const Footer = ({ row, col, colOne, colTwo }) => {
                   <a className="text" href={`tel:${phone}`}>{phone}</a>
                 </ListItem>
               </List>
-              
+
               <SocialList />
             </Box>
             {/* End of logo column */}
@@ -67,9 +67,17 @@ const Footer = ({ row, col, colOne, colTwo }) => {
                   <List>
                     {widget.menu.map((item, itemId) => (
                       <ListItem key={`list__item-${itemId}`}>
-                        <Link href={item.link}>
-                          <a title={item.text}>{item.text}</a>
-                        </Link>
+                        { item.link.match(/^https?:/) ? (
+                          <a href={item.link} title={item.text}>
+                            {item.text}
+                          </a>
+                        ) : (
+                          <Link href={item.link}>
+                            <a title={item.text}>
+                              {item.text}
+                            </a>
+                          </Link>
+                        ) }
                       </ListItem>
                     ))}
                   </List>
