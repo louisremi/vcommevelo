@@ -122,12 +122,10 @@ const Banner = () => {
               <Fragment>
                 {carousel.map(item => (
                   <GlideSlide key={`carousel_key${item.id}`}>
-                    <Link href={item.link}>
-                      <a className="item_wrapper">
-                        <Image src={item.thumb_url} alt={item.title} />
-                        <Heading as="h4" content={item.title} />
-                      </a>
-                    </Link>
+                    <a href={item.link} className="item_wrapper">
+                      <Image src={item.thumb_url} alt={item.title} />
+                      <Heading as="h4" content={item.title} />
+                    </a>
                   </GlideSlide>
                 ))}
               </Fragment>

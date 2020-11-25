@@ -47,10 +47,6 @@ export const menuData = [
 /* ------------------------------------ */
 // Banner section data
 /* ------------------------------------ */
-import cyfac from 'common/src/assets/image/velo/velo/cyfac.jpg';
-import rr740 from 'common/src/assets/image/velo/velo/RR740.jpg';
-import mbk from 'common/src/assets/image/velo/velo/mbk.jpg';
-
 export const bannerData = {
   title: 'Des vélos, mais pas que…',
   text: `
@@ -60,19 +56,24 @@ export const bannerData = {
   `,
   carousel: [
     {
-      thumb_url: cyfac,
-      title: 'Cyfac Dura-ace',
-      link: '/velo/cyfac',
+      thumb_url: 'https://cdn.shopify.com/s/files/1/0508/5554/2943/products/IMG_1853_470x.jpg',
+      title: 'Cyfac Altec Dura-ace',
+      link: 'https://shop.vcommevelo.fr/collections/velo-de-route/products/cyfac-altec-dura-ace-t57',
     },
     {
-      thumb_url: rr740,
-      title: 'Rockrider 740 Deore XT',
-      link: '/velo/rr740',
+      thumb_url: 'https://cdn.shopify.com/s/files/1/0508/5554/2943/products/IMG_1613_470x.jpg?',
+      title: 'Cannondale CAAD3 Dura-ace',
+      link: 'https://shop.vcommevelo.fr/collections/velo-de-route/products/cannondale-caad3-dura-ace-taille-s',
     },
     {
-      thumb_url: mbk,
-      title: 'MBK 105',
-      link: '/velo/mbk',
+      thumb_url: 'https://cdn.shopify.com/s/files/1/0508/5554/2943/products/IMG_1594_470x.jpg',
+      title: 'Backroads Titane Ultegra',
+      link: 'https://shop.vcommevelo.fr/collections/velo-de-route/products/backroads-titane-ultegra-taille-m',
+    },
+    {
+      thumb_url: 'https://cdn.shopify.com/s/files/1/0508/5554/2943/products/IMG_1621_470x.jpg',
+      title: 'Decathlon 9.1 Dedacciai Dura-ace',
+      link: 'https://shop.vcommevelo.fr/collections/velo-de-route/products/decathlon-9-1-dedacciai-dura-ace-taille-m',
     },
   ],
 };

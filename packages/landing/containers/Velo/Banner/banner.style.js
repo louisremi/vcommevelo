@@ -311,19 +311,30 @@ export const CarouselArea = styled.div`
         > span {
           &.next_arrow {
             width: 45px;
-            background-color: ${themeGet('colors.primary', '#FDEF00')};
+            background-color: ${themeGet('colors.white', '#FDEF00')};
             @media only screen and (max-width: 667px) {
               width: 30px;
             }
 
             &::before {
-              background-color: ${themeGet('colors.primary', '#FDEF00')};
+              background-color: ${themeGet('colors.white', '#FDEF00')};
               transform: rotate(42deg);
             }
 
             &::after {
-              background-color: ${themeGet('colors.primary', '#FDEF00')};
+              background-color: ${themeGet('colors.white', '#FDEF00')};
               transform: rotate(-42deg);
+            }
+          }
+        }
+
+        &:hover {
+          > span {
+            background-color: ${themeGet('colors.secondary', '#352FD9')};
+
+            &::before,
+            &::after {
+              background-color: ${themeGet('colors.secondary', '#352FD9')};
             }
           }
         }

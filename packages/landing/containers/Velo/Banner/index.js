@@ -50,7 +50,7 @@ const Banner = () => {
           <Fade bottom delay={30}>
             <Heading as="h1" content={title} />
             <Text content={text} />
-            
+
             <AnchorLink href="#services" className="learn__more-btn">
                 <span className="btn_text">NOS SERVICES</span>
                 <span className="next_arrow"></span>
@@ -70,12 +70,10 @@ const Banner = () => {
               <Fragment>
                 {carousel.map((item, id) => (
                   <GlideSlide key={`carousel_key${id}`}>
-                    <Link href={item.link}>
-                      <a className="item_wrapper">
-                        <Image src={item.thumb_url} alt={item.title} />
-                        <Heading as="h4" content={item.title} />
-                      </a>
-                    </Link>
+                    <a href={item.link} className="item_wrapper">
+                      <Image src={item.thumb_url} alt={item.title} />
+                      <Heading as="h4" content={item.title} />
+                    </a>
                   </GlideSlide>
                 ))}
               </Fragment>
