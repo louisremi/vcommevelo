@@ -67,7 +67,7 @@ const Footer = ({ row, col, colOne, colTwo }) => {
                   <List>
                     {widget.menu.map((item, itemId) => (
                       <ListItem key={`list__item-${itemId}`}>
-                        { item.link.match(/^https?:/) ? (
+                        { item.link && item.link.match(/^https?:/) ? (
                           <a href={item.link} title={item.text}>
                             {item.text}
                           </a>

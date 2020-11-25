@@ -19,12 +19,12 @@ const BlogPost = ({ className, thumbUrl, title, excerpt, link }) => {
       <div className="content">
         <h3 className="title">{title}</h3>
         <p className="excerpt">{excerpt}</p>
-        {link.match(/^https?:/) ? (
+        {link && link.match && link.match(/^https?:/) ? (
           <a href={link} className="learn__more-btn">
             <span className="btn_text">+ de détails</span>
             <span className="next_arrow"></span>
           </a>
-        ) : (
+        ) : ( link &&
           <Link href={link}>
             <a className="learn__more-btn">
               <span className="btn_text">+ de détails</span>
