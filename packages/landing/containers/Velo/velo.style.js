@@ -61,7 +61,7 @@ const GlobalStyle = createGlobalStyle`
     }
     @media only screen and (max-width: 991px) {
       font-size: 20px;
-      line-height: 30px;  
+      line-height: 30px;
     }
   }
 
@@ -151,7 +151,7 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-  /* Modal style */ 
+  /* Modal style */
   button.modalCloseBtn {
     color: ${themeGet('colors.white', '#ffffff')} !important;
     &.alt {
@@ -554,14 +554,14 @@ const VeloWrapper = styled.div`
         > span {
           width: 45px;
           border-radius: 4px;
-          background-color: ${themeGet('colors.primary', '#FDEF00')};
+          background-color: ${themeGet('colors.secondary', '#FDEF00')};
           @media only screen and (max-width: 667px) {
             width: 30px;
           }
 
           &::before,
           &::after {
-            background-color: ${themeGet('colors.primary', '#FDEF00')};
+            background-color: ${themeGet('colors.secondary', '#FDEF00')};
           }
 
           &.prev_arrow {

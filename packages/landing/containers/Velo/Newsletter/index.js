@@ -30,11 +30,11 @@ const Newsletter = ({
     const url = 'https://b43f13e4.sibforms.com/serve/MUIEAALA45AQZPqs2u4j2l2DhBLNw5dHLL9h7rui5uf6UH1HcuX8kVfpZkbNnQ8HvF6IHJJnujkcQusE5CHQl-9AV8_N-aMZzuJ4PYY4cFZycTT23SuVIwy2sX3b6DI4YzsZiGM6rr-COAMY13rS3NysOxcBTH-usaSsU8DYEdBfimbzpI6PkxGDI4rL67kiT4OZyx0PZab_szgr?isAjax=1';
     const email = event.target.parentNode.querySelector('input[type=email]').value;
     const formData = new FormData();
-    
+
     formData.append('EMAIL', email);
     formData.append('email_address_check', '');
 
-    
+
     const json = await fetch(url, {
       method: 'POST',
       headers: {
@@ -78,7 +78,7 @@ const Newsletter = ({
                           aria-label="email"
                         />
                         <input {...button} type="submit"
-                          value="S'ABONNER"
+                          value="S'INSCRIRE"
                           disabled={isLoading}
                           onClick={handleSubmit}
                         />
