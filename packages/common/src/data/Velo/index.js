@@ -473,8 +473,8 @@ import logo from 'common/src/assets/image/velo/logo.png';
 
 export const footerData = {
   logo: logo,
-  email: 'hello@vcommevelo.fr',
-  phone: '06 71 11 41 71',
+  email: 'PLUS EN ACTIVITÉ',
+  phone: 'PLUS EN ACTIVITÉ',
   menuWidgets: [
     {
       title: 'Boutique',
